@@ -1,8 +1,15 @@
+const champ = document.getElementById('champ');
+const btn = document.getElementById('btn');
+const output = document.getElementById('output');
+
+
 btn.onclick = () => {
     fetch('https://api.github.com/users/' + champ.value)
-
     .then(response => response.json())
     .then(data => {
+        // Supprimer la classe "hidden" pour afficher la div
+        output.classList.remove('hidden');
+
         output.textContent = "";
         output.textContent = `Compte Github de ${data.name}`;
         
@@ -15,8 +22,16 @@ btn.onclick = () => {
         output.innerHTML += `<br>Nombre de following: ${data.following}`;
 
     })
-
     .catch(error => {
         output.textContent = "Erreur: " + error;
     })
 }
+
+// Activer la recherche lorsque la touche Entrée est enfoncée avec event.code
+
+champ.addEventListener('keyup', (e) => {
+    if (e.code === "Enter") {
+        btn.click();
+    }
+})
+

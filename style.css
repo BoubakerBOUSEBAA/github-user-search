@@ -1,5 +1,5 @@
 body {
- background-image: url("pictures/GITBAKARLABS_story.mp4");
+ 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,11 +76,24 @@ img  {
     width: 20%;
     height: auto;
     border-radius: 50%;
+    margin-top: 2rem;
+    
 }
 
+
+
+
+.hidden {
+    display: none;
+  }
+  
 #output {
     width: 48%;
-    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #ffffff;
+   border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: #f2f2f225;
@@ -113,19 +126,20 @@ img  {
     }
 
     body {
-        background-image: url("pictures/GITBAKARLABS.jpg");
+        
         background-size: cover;
     }
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     input[type=text], button {
-        width: 100%;
+        width: 90%;
         margin-top: 0;
+        margin-bottom: 1rem;
     }
 
     #output {
-        width: 100%;
+        width: 90%;
     }
 
     img {
@@ -133,12 +147,15 @@ img  {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
-    body {
-        background-image: url("pictures/GITBAKARLABS_story.jpg");
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
+
+    
 }
 
 
