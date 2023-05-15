@@ -17,7 +17,8 @@ btn.onclick = () => {
         img.src = data.avatar_url;
         output.appendChild(img);
         output.innerHTML += `<br>Bio: ${data.bio}`;
-        output.innerHTML += `<br>Nombre de repos: ${data.public_repos}`;
+        output.innerHTML += `<br>Portfolio: ${data.blog}`;
+        output.innerHTML += `<br>Nombre de repos public: ${data.public_repos}`;
         output.innerHTML += `<br>Nombre de followers: ${data.followers}`;
         output.innerHTML += `<br>Nombre de following: ${data.following}`;
 

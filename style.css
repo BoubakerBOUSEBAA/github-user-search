@@ -130,6 +130,60 @@ img  {
         background-size: cover;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    input[type=text], button {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    #output {
+        width: 90%;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    input[type=text], button {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    #output {
+        width: 90%;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+    
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     input[type=text], button {
@@ -143,7 +197,7 @@ img  {
     }
 
     img {
-        width: 50%;
+        width: 30%;
     }
 
     h1 {
